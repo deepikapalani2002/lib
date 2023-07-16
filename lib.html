@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- External CSS file -->
+  <style>
+    /* styles.css */
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #555;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #888;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+      <h1>Library Management System</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a >Home</a></li>
+        
+      </ul>
+    </nav>
+    
+    <main>
+      <section id="books">
+        <h2>Manage Books</h2>
+        <form>
+          <label for="bookTitle">Title:</label>
+          <input type="text" id="bookTitle" name="bookTitle" required>
+          
+          <label for="bookAuthor">Author:</label>
+          <input type="text" id="bookAuthor" name="bookAuthor" required>
+          
+          <label for="bookStock">Stock:</label>
+          <input type="number" id="bookStock" name="bookStock" required>
+          
+          <button type="submit">Submit</button>
+          <button type="button">Cancel</button>
+        </form>
+      </section>
+      
+      <section id="members">
+        <h2>Manage Members</h2>
+        <form>
+          <label for="memberName">Name:</label>
+          <input type="text" id="memberName" name="memberName" required>
+          
+          <label for="memberEmail">Email:</label>
+          <input type="email" id="memberEmail" name="memberEmail" required>
+          
+          <label for="memberPhone">Phone:</label>
+          <input type="tel" id="memberPhone" name="memberPhone" required>
+          
+          <button type="submit">Submit</button>
+          <button type="button">Cancel</button>
+        </form>
+      </section>
+      
+      <section id="transactions">
+        <h2>Manage Transactions</h2>
+        <form>
+          <label for="bookId">Book ID:</label>
+          <input type="text" id="bookId" name="bookId" required>
+          
+          <label for="memberId">Member ID:</label>
+          <input type="text" id="memberId" name="memberId" required>
+          
+          <label for="borrowDate">Borrow Date:</label>
+          <input type="date" id="borrowDate" name="borrowDate" required>
+          
+          <button type="submit">Submit</button>
+          <button type="button">Cancel</button>
+        </form>
+      </section>
+    </main>
+    
+  </body>
+    
+</html>
